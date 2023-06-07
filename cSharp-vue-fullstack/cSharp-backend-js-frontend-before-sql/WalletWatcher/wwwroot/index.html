@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+</head>
+<body>
+    <!-- 
+        
+        -->
+
+    <div id="app"></div>
+<script>
+        const model = {
+            inputs: {
+                id: null,
+                name: null,
+                email: null,
+            },
+            people: [
+            //    {
+            //        id: '1', name: 'Kenneth', email: 'kenneth@mail.com'
+            //    },
+            //    {
+            //        id: '2', name: 'Andrea', email: 'andrea@mail.com'
+            //    },
+            //    {
+            //        id: '3', name: 'Liam', email: 'liam@mail.com'
+            //    },
+            ]
+        }
+
+       
+    getData();
+    function updateView() {
+            document.getElementById('app').innerHTML = /*HTML*/ `
+                <ul>
+                    ${createPeopleHtml()}
+                </ul>
+                <hr/>
+                Fornavn: <br/>
+                <input
+                    type="text"
+                    oninput="model.inputs.name=this.value"
+                    value="${model.inputs.name || ''}"
+                    /><br/>
+                    E-post:<br/>
+                <input
+                    type="text"
+                    oninput="model.inputs.email=this.value"
+                    value="${model.inputs.email || ''}"
+                /><br/>
+                <button onclick="creatOrUpdatePerson()">
+                    ${model.inputs.id == null ? 'Lag ny' : 'Endre'}
+                </button>    
+            `;
+        }
+
+    function createPeopleHtml() {
+        return model.people.map(p => /*HTML*/`
+        <li>
+            ${p.name}
+            ${p.email}
+            <button onclick="editPerson('${ p.id }')">rediger</button>
+            <button onclick="deletePerson('${ p.id }')">delete</button>
+        </li>
+        `).join('');
+        
+    }
+
+    /* controller - api */      
+    async function deletePerson(id) {
+        console.log({id})
+        const response = await axios.delete('/people/' + id);
+        getData();
+    }
+
+    async function getData() {
+        const response = await axios.get('/people')
+        model.people = response.data;
+        console.log(model.people)
+        updateView();
+    }
+
+    /* controller - api */
+    function creatOrUpdatePerson() {
+        if (model.inputs.id == null) createPerson();
+        else updatePerson();
+
+        updateView(); 
+    }
+
+    /* controller - api */
+    async function createPerson() {
+        const person = {
+            name: model.inputs.name,
+            email: model.inputs.email,
+        };
+        const response = await axios.post('/people', person);
+        getData();
+    }
+
+    /* controller - api */
+    async function updatePerson() {
+        const person = {
+            id: model.inputs.id,
+            name: model.inputs.name,
+            email: model.inputs.email,
+        };
+        const response = await axios.put('/people', person);
+        getData();
+    }
+
+    /*controller */ 
+    function editPerson(id) {
+        const person = model.people.find(p => p.id == id)
+        if (person == null) return;
+        model.inputs.id = person.id
+        model.inputs.name = person.name;
+        model.inputs.email = person.email;
+        updateView();
+    }
+    </script>
+</body>
+</html>

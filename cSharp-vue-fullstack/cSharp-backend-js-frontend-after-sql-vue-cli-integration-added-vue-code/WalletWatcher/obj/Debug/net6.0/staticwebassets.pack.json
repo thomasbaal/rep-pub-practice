@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "M:\\rep-pub-practice\\cSharp-backend-js-frontend-after-sql-vue-cli-integration-added-vue-code\\WalletWatcher\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.WalletWatcher.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.WalletWatcher.props",
+      "PackagePath": "build\\WalletWatcher.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.WalletWatcher.props",
+      "PackagePath": "buildMultiTargeting\\WalletWatcher.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.WalletWatcher.props",
+      "PackagePath": "buildTransitive\\WalletWatcher.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

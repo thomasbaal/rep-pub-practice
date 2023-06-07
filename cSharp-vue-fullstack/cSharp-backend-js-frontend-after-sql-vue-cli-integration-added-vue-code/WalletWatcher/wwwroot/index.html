@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <ul>
+            <li v-for="person in people" :key="person.id">
+                {{person.name}} {{person.email}}
+                <button @click="editPerson(person.id)">edit</button>
+                <button @click="deletePerson(person.id)">delete</button>
+            </li>
+        </ul>
+        <hr />
+        Fornavn: <br />
+        <input type="text" v-model="inputs.name" /><br />
+        E-post:<br />
+        <input type="text" v-model="inputs.email" /><br />
+        <button @click="createOrUpdatePerson">
+            {{inputs.id == null ? 'Lag ny' : 'Endre'}}
+        </button>
+    </div>
+
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                inputs: {
+                    id: null,
+                    name: null,
+                    email: null
+                },
+                people: []
+            },
+            mounted() {
+                this.getData();
+            },
+            methods: {
+                async getData() {
+                    const response = await axios.get('/people');
+                    this.people = response.data;
+                },
+                async deletePerson(id) {
+                    await axios.delete('/people/' + id);
+                    this.getData();
+                },
+                async createOrUpdatePerson() {
+                    if (this.inputs.id == null) this.createPerson();
+                    else this.updatePerson();
+                },
+                async createPerson() {
+                    const person = {
+                        name: this.inputs.name,
+                        email: this.inputs.email,
+                    };
+                    await axios.post('/people', person);
+                    this.getData();
+                },
+                async updatePerson() {
+                    const person = {
+                        id: this.inputs.id,
+                        name: this.inputs.name,
+                        email: this.inputs.email,
+                    };
+                    await axios.put('/people', person);
+                    this.getData();
+                },
+                editPerson(id) {
+                    const person = this.people.find(p => p.id == id);
+                    if (person == null) return;
+                    this.inputs.id = person.id;
+                    this.inputs.name = person.name;
+                    this.inputs.email = person.email;
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

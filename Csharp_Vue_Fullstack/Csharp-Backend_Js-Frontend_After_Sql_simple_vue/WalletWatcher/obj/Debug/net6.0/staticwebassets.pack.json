@@ -1,0 +1,57 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\Coding\\Repo_Pub_Work\\C#_Vue_Fullstack\\C#-Backend_Js-Frontend_After_Sql_simple_vue\\WalletWatcher\\wwwroot\\assets\\images\\socks_blue.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\socks_blue.jpg"
+    },
+    {
+      "Id": "E:\\Coding\\Repo_Pub_Work\\C#_Vue_Fullstack\\C#-Backend_Js-Frontend_After_Sql_simple_vue\\WalletWatcher\\wwwroot\\assets\\images\\socks_green.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\socks_green.jpg"
+    },
+    {
+      "Id": "E:\\Coding\\Repo_Pub_Work\\C#_Vue_Fullstack\\C#-Backend_Js-Frontend_After_Sql_simple_vue\\WalletWatcher\\wwwroot\\assets\\styles.css",
+      "PackagePath": "staticwebassets\\assets\\styles.css"
+    },
+    {
+      "Id": "E:\\Coding\\Repo_Pub_Work\\C#_Vue_Fullstack\\C#-Backend_Js-Frontend_After_Sql_simple_vue\\WalletWatcher\\wwwroot\\components\\ProductDisplay.js",
+      "PackagePath": "staticwebassets\\components\\ProductDisplay.js"
+    },
+    {
+      "Id": "E:\\Coding\\Repo_Pub_Work\\C#_Vue_Fullstack\\C#-Backend_Js-Frontend_After_Sql_simple_vue\\WalletWatcher\\wwwroot\\components\\ReviewForm.js",
+      "PackagePath": "staticwebassets\\components\\ReviewForm.js"
+    },
+    {
+      "Id": "E:\\Coding\\Repo_Pub_Work\\C#_Vue_Fullstack\\C#-Backend_Js-Frontend_After_Sql_simple_vue\\WalletWatcher\\wwwroot\\components\\ReviewList.js",
+      "PackagePath": "staticwebassets\\components\\ReviewList.js"
+    },
+    {
+      "Id": "E:\\Coding\\Repo_Pub_Work\\C#_Vue_Fullstack\\C#-Backend_Js-Frontend_After_Sql_simple_vue\\WalletWatcher\\wwwroot\\index copy.html",
+      "PackagePath": "staticwebassets\\index copy.html"
+    },
+    {
+      "Id": "E:\\Coding\\Repo_Pub_Work\\C#_Vue_Fullstack\\C#-Backend_Js-Frontend_After_Sql_simple_vue\\WalletWatcher\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "E:\\Coding\\Repo_Pub_Work\\C#_Vue_Fullstack\\C#-Backend_Js-Frontend_After_Sql_simple_vue\\WalletWatcher\\wwwroot\\main.js",
+      "PackagePath": "staticwebassets\\main.js"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.WalletWatcher.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.WalletWatcher.props",
+      "PackagePath": "build\\WalletWatcher.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.WalletWatcher.props",
+      "PackagePath": "buildMultiTargeting\\WalletWatcher.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.WalletWatcher.props",
+      "PackagePath": "buildTransitive\\WalletWatcher.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

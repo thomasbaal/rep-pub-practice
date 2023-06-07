@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  <style>
+    .pro{
+      text-decoration: underline;
+    }
+
+    .inlineTest{
+      display: inline;
+    }
+
+    .blockTest{
+      display: block;
+    }
+
+    .inlineBlockTest{
+      display: inline-block;
+      background-color: yellow;
+    }
+
+    .displayNoneTest{
+      display: none;
+      background-color: red;
+    }
+
+    .backgroundcolor{
+      background-color: red;
+    }
+
+    .hiddenTest{
+      visibility: hidden;
+    }
+
+    .red{
+      background-color: red;
+      height: 100px;
+      width: 100px;
+    }
+
+    .blue{
+      background-color: blue;
+      height: 100px;
+      width: 100px;
+    }
+
+    .yellow{
+      background-color: yellow;
+      height: 100px;
+      width: 100px;
+    }
+  </style>
+  </head>
+
+  
+
+    <h1>CSS Positionings</h1>
+    <ul>
+      <li>Inline elements vs block elements</li>
+    </ul>
+
+    <h3>Inline elements</h3>
+    <p>
+      Inline elements will only take up as much space that are being used - 3
+      letters will take 3 letters
+    </p>
+
+    <h3>Block elements will take the whole width of the page</h3>
+    <div style="background-color: red;">this is a div, witch is a block element, it will occupy the whole width</div>
+    <div style="background-color: blue;color: white;">this is also a div, witch is a block element, it will occupy the whole width</div>
+    
+    <br>
+    <h3>We can use a "span" witch are an inline element inside a block element</h3>
+    <div>example below is using a span that are an inline element inside a block element. the word programmer
+      is split the "pro" into a span a set a styling with an underline.
+    </div>
+    <p><span class="pro">pro</span>grammer</p>
+    <h3>common inline elements</h3>
+    <ul>
+      <li>Spans</li>
+      <li>Images</li>
+      <li>Anchors</li>
+    </ul>
+    <h3>example of using 2 anchors - they will both occupy same line because they are not blocking</h3>
+    <a href="boxExample.html">Box Example</a>
+    <a href="boxExample.html">Box Example</a>
+    <hr>
+    <h2>Downside of using inline elements</h2>
+    <p>you cannot change the with of an inline element like you can on a block element.</p>
+    <p>but there are ways to work arround this</p>
+    <p>you can force it to display as inline with css like below with - Display: inline</p>
+    <p class="inlineTest">i am now displayed as inline -- but you cant change the width still</p>
+    <p class="inlineTest">i am now displayed as inline -- but you cant change the width still</p>
+    
+    <h1>you can also display an inline element as a block with - Display: block</h1>
+    <p>below i used a span element that should be on the same line, but as i set it to display 
+      as a block element it goes to the next line.
+    </p>
+    <span class="blockTest">blocktest by using a inline span element</span>
+    <span class="blockTest">blocktest by using a inline span element</span>
+    <span class="blockTest">blocktest by using a inline span element</span>
+    <hr>
+    <h2>Solution: Display it as a inline block</h2>
+    <p>below i have used css to style it as a inline block with Display: inline-block</p>
+    <p>as you can see they are now on the same line inside a block</p>
+    <p class="inlineBlockTest">Hello</p>
+    <p class="inlineBlockTest">World</p>
+    <hr>
+    <h2>Hiding an element with display: none</h2>
+    <p>below the paragrapgh with text World  is set to hidden, skipping it all together</p>
+    <p class="backgroundcolor inlineBlockTest">Hello</p>
+    <p class="displayNoneTest">World !</p>
+    <p class="backgroundcolor inlineBlockTest">Hello</p>
+    <hr>
+    <h2>Using the visibility: hidden; style</h2>
+    <p>below we have red as background color, nr.2 set as hidden, and all is set to inline block
+      as you can see, the word big is now hidden, But the important part here is that it is still using
+      the space it normally would have done, witch is in the middel of the two other words.
+    </p>
+    <p class="inlineBlockTest backgroundcolor hiddenTest"></p>
+    <p class="inlineBlockTest backgroundcolor">Hello</p>
+    <p class="inlineBlockTest backgroundcolor hiddenTest">big</p>
+    <p class="inlineBlockTest backgroundcolor">World !</p>
+    <hr>
+    <h1>CSS Positioning</h1>
+    <h2>Important: before adding eny css to enything there are predefined rules set in stone by html
+      .. like inline elements and block elements.
+      take note of this as it will have an effect as you will see.
+    <h2>
+
+      <h2>html elements have visibility priority</h2>
+      <h2> a h1 inside a div, the h1 will have priority</h2>
+      --------
+      <div>
+        <h1>Children sit on top of parents</h1>
+      </div>
+      ---------
+      <h2>a span wil lay on top of the h1, and h1 wil be on top of the div</h2>
+      <div>
+        <h1>a <span>pro</span>grammer</h1>
+      </div>
+      --------
+      <h3>div inside a h1, h1 is still having priority, and the div font size is the same as the h1</h3>
+      <h1> this is h1
+        <div>this is a div</div>
+      </h1>
+      ---------
+      <div>what is this</div>
+      <hr>
+      <h2>Static - Relative - Absolute - Fixed</h2>
+      <ul>
+        <li>Static</li>
+        <li>Relative</li>
+        <li>Absolute</li>
+        <li>Fixed</li>
+      </ul>
+      <p>Images are static by default</p>
+      <img height="100" width="100" src="images/bacon.png">
+      <p>Relative position means, in relative to where it used to be.</p>
+      <p>if we set left:30px it will move from the left 30px from where it USED to be</p>
+      <p>lets set its relative position to "left 30px"</p>
+      <p>there a 4 positions to set, top, bottom, left , right</p>
+      <img style="position: relative; left: 50px;" height="100" width="100" src="images/bacon.png">
+      <hr>
+      <h2>Testing positioning with 3 colored boxes using relative, static, and margin movement</h2>
+      <p>all squares set to height and with 100px, and background color set in internal css</p>
+      <p>--------------------------------------</p>
+      <div class="red">Red</div>
+      <div class="blue">blue</div>
+      <div class="yellow">yellow</div>
+      <p>--------------------------------------</p>
+      <p>moving red down by 50px, everything is set as default, no positioning</p>
+      <p>nothing happens !</p>
+      <div style="top: 50px;" class="red">Red</div>
+      <div class="blue">blue</div>
+      <div class="yellow">yellow</div>
+      <p>--------------------------------------</p>
+      <p>moving red down by 50 px, setting red square positioning as relative</p>
+      <p>now it has moved on top of the blue by 50px, blue is keeping its position</p>
+      <div style="top: 50px; position: relative;" class="red">Red</div>
+      <div class="blue">blue</div>
+      <div class="yellow">yellow</div>
+      <p>--------------------------------------</p>
+      <p>moving red down by 50px with relative, blue and yellow is now set to relative</p>
+      <p>now blue that hasnt moved, is now on top of the red, yellow stays put</p>
+      <div style="top: 50px; position: relative;" class="red">Red</div>
+      <div style="position: relative;" class="blue">blue</div>
+      <div  style="position: relative;" class="yellow">yellow</div>
+      <p>--------------------------------------</p>
+      <h3>Challenge: by only using display property and left,right,botto, and top to 
+        set all squares on a line in this oreder: blue,yellow,red
+      </h3>
+      <div style="left: 200px; position: relative;" class="red">Red</div>
+      <div style="bottom: 100px; display: inline block; position: relative;" class="blue">blue</div>
+      <div style="bottom: 200px; left: 100px; display: inline-block; position: relative;" class="yellow">yellow</div>
+      <p>solution and explaination :
+        The all important fact here is the word relative.
+        if i set one of the squares to inline, it shrunk to the size of the text inside,
+        so it got very small, and that goes along with that a inline element uses only the space needed.
+      </p>
+      <p>so the red had to be moved to the left relative to its position 200px</p>
+      <p>the blue had to be move 100px closer to top top, so relative to bottom 100px</p>
+      <p>the yellow, in relative to its position had to be moved 200px from the bottom and up.
+        and 100px relative to the left side
+      </p>
+      <hr>
+      <h1>Absolute Position</h1>
+      <p>What happens if we set the picture to absolute position inside a div to 30px</p>
+      
+      <div  style="background-color: lightblue; height: 200px; width: 200px;" class="red">
+        <img style="position: absolute; right: 30px;" height="100px" width="100px" src="images/bacon.png">
+      </div>
+      <div>It moved it all the way to the right with a margin from the right side of 30px </div>
+      <h2>Showing this with the 3 squares</h2>
+      <p>from the last example when we used relative, moving the red square to the right, the blue
+        and yellow squares stayed put.
+      </p>
+      <p>---------------------------------------------</p>
+      <p>by moving the red square that is set to absolute position to the left 200px
+        the natural flow changes, blue and yellow moves up.
+      </p>
+      <div style="left: 200px; position: absolute;" class="red">Red</div>
+      <div style="" class="blue">blue</div>
+      <div style="" class="yellow">yellow</div>
+
+      <p>---------------------------------------------</p>
+      <h3>what happens if we set blue and yellow to absolute position</h3>
+      </p>
+      <p>blue is now been overlapped by the yellwo square</p>
+      <div style="left: 200px; bottom: 400px; position: absolute;" class="red">Red</div>
+      <div style="position: absolute;" class="blue">blue</div>
+      <div style="position: absolute;" class="yellow">yellow</div>
+      
+      <p>---------------------------------------------</p>
+      <h3></h3>
+    </p>
+    <div style="background-color: blueviolet; position: absolute; top: 6200px; height: 350px; width: 350px;">
+      <div style="left: 200px; top: 200px; position: absolute;" class="red">Red</div>
+      <div style="position: absolute; top: 100px; left: 100px;" class="blue">blue</div>
+      <div style="position: absolute;" class="yellow">yellow</div>
+    </div>
+    </body>
+</html>

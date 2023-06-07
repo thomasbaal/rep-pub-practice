@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    .invisible {
+      visibility: hidden;
+    }
+
+    .huge {
+      font-size: 10rem;
+      font-weight: bold;
+      color: aqua;
+    }
+  </style>
+
+  <body>
+    <h1><strong>Herrow</strong></h1>
+    <div>
+      <div>inside a container</div>
+    </div>
+
+    <h2>h2 nr.1</h2>
+    <h2>h2 nr.2</h2>
+    <ul id="list">
+      <li class="item"><a href="https://www.google.com"></a>Link</li>
+      <li class="item">second</li>
+      <li class="item">third</li>
+    </ul>
+
+    <input id="checkbox1" type="checkbox" />
+    <button class="buttonClass1">Button1</button>
+    <button class="buttonClass2">Button2</button>
+
+    <script>
+      var h1 = document.querySelector("h1");
+      var h2s = document.querySelectorAll("h2");
+      var h2s2 = document.getElementsByTagName("h2");
+      var liWithTheLink = document.querySelector("li a");
+      liWithTheLink.style.color = "green";
+      var secondLi = document.querySelector("ul li:nth-child(2)");
+      var allListItems = document.getElementsByTagName("li");
+      allListItems[2].style.color = "red";
+
+      // runFibonacciGenerator(3);
+      var outputArr = [];
+      function runFibonacciGenerator(n) {
+        for (let index = 0; index < 10; index++) {
+          if (n === 1) {
+            outputArr.push(0);
+          }
+          if (n === 2) {
+            outputArr.push(0);
+            outputArr.push(1);
+          }
+          if (n === 3) {
+            outputArr;
+          }
+        }
+      }
+
+      ///////////////////////////////////////////////////////////////////////////////////////
+      var beer = 100;
+      // run();
+      function run() {
+        while (beer >= 0) {
+          console.log(
+            beer + " bottles of beer on the wall," + beer + " bottles of beer",
+            +" Take 1 down, pass it arround," +
+              beer +
+              "bottles of beer on the wall"
+          );
+          beer--;
+        }
+      }
+
+      ///////////who is paying //////////////////////////////////////////////////////////////
+      // run2();
+      function run2(params) {
+        var names = ["Angela", "Ben", "Jenny", "Michael", "Chloe"];
+
+        whosPaying();
+        function whosPaying() {
+          /******Don't change the code above*******/
+
+          //Write your code here.
+          console.log(names[Math.floor(Math.random() * names.length)]);
+
+          /******Don't change the code below*******/
+        }
+      }
+
+      //////////////////////////////////////////////////////////////////////////////////////////////////////
+      ///// The FizzBuzz Problem /////////////////////////////
+
+      // run();
+      // function run(params) {
+      //   var output = [];
+      //   var count = 0;
+
+      //   while (count <= 100) {
+      //     FizzBuzz();
+      //     function FizzBuzz() {
+      //       if (count % 3 === 0 && count % 5 === 0) {
+      //         output.push("fizzBuzz");
+      //         count++;
+      //       } else if (count % 3 === 0) {
+      //         output.push("fizz");
+      //         count++;
+      //       } else if (count % 5 === 0) {
+      //         output.push("buzz");
+      //         count++;
+      //       } else {
+      //         output.push(count);
+      //         count++;
+      //       }
+      //     }
+      //   }
+      //   console.log(output);
+      // }
+      ///////////////////////////////////////////////////////////////////////////////////////////////////
+      // guestList();
+      function guestList(params) {
+        var guestList = ["Angela", "Andrea", "Thomas", "Liam", "Per"];
+        var nameToCheck = "liam";
+        if (checkAgainstList(nameToCheck)) {
+          console.log("your on the list");
+        } else {
+          console.log("you are Not on the list !");
+        }
+
+        // checkAgainstList(nameToCheck);
+        function checkAgainstList(nameToCheck) {
+          // return guestList.includes(nameToCheck);
+          console.log(nameToCheck);
+
+          console.log(guestList.includes(nameToCheck));
+
+          return guestList.includes(
+            nameToCheck.slice(0, 1).toUpperCase() +
+              nameToCheck.slice(1, nameToCheck.length)
+          );
+        }
+      }
+
+      //////////////////////////////////////////////////////////////////////////////////////
+
+      function checkYearForLeap(params) {
+        for (let year = 2000; year <= 2100; year++) {
+          // yearToCheckForLeap(year);
+        }
+        function yearToCheckForLeap(year) {
+          if (year % 4 == 0 && (year % 100 != 0 || year % 400 == 0)) {
+            console.log(year + " is a leap year !");
+          } else {
+            console.log(year + " is not a leap year !");
+          }
+        }
+      }
+
+      /////////////////////////////////////////////////////////////////////////////////////
+      // // var name1 = prompt("name 1");
+      // // var name2 = prompt("name 2");
+      // var name1 = "thomas";
+      // var name2 = "Andrea";
+
+      // var random = Math.random() * 100;
+      // var randFloor = Math.floor(random) + 1;
+
+      // console.log(
+      //   name1 +
+      //     " got " +
+      //     randFloor +
+      //     "%  match with " +
+      //     name2 +
+      //     (randFloor >= 50 ? " it's a match" : " no match")
+      // );
+
+      ///////////////////////////////////////////////////////////////////////////////////
+      // Bmi calcualtor : Bmi = Weight(kg) / Height(meter)
+
+      // console.log(calcBmi(70, 1.8));
+      function calcBmi(weight, height) {
+        // return Math.floor(weight / height ** 2);
+        return Math.round(weight / Math.pow(height, 2));
+      }
+
+      /////////////////////////////////////////////////////////////////////////////////////
+      // getMilk(12);
+      function getMilk(money) {
+        console.log("leaveHouse");
+        console.log("moveRight");
+        console.log("moveRight");
+        console.log("moveUp");
+        console.log("moveUp");
+        console.log("moveUp");
+        console.log("moveUp");
+        console.log("moveRight");
+        console.log("moveRight");
+        console.log(
+          "we are able to buy" +
+            " " +
+            // (money / 1.5).toFixed(0) +
+            Math.floor(money / 1.5) +
+            " bottles" +
+            " of milk"
+        );
+        console.log("moveLeft");
+        console.log("moveLeft");
+        console.log("moveDown");
+        console.log("moveDown");
+        console.log("moveDown");
+        console.log("moveDown");
+        console.log("moveLeft");
+        console.log("moveLeft");
+        console.log("enterHouse");
+      }
+    </script>
+  </body>
+</html>
