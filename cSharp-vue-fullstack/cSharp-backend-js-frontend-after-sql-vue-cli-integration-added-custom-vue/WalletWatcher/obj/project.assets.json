@@ -2254,11 +2254,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "M:\\rep-pub-practice\\cSharp-backend-js-frontend-after-sql-vue-cli-integration-added-custom-vue\\WalletWatcher\\WalletWatcher.csproj",
+      "projectUniqueName": "M:\\rep-pub-practice\\cSharp-vue-fullstack\\cSharp-backend-js-frontend-after-sql-vue-cli-integration-added-custom-vue\\WalletWatcher\\WalletWatcher.csproj",
       "projectName": "WalletWatcher",
-      "projectPath": "M:\\rep-pub-practice\\cSharp-backend-js-frontend-after-sql-vue-cli-integration-added-custom-vue\\WalletWatcher\\WalletWatcher.csproj",
+      "projectPath": "M:\\rep-pub-practice\\cSharp-vue-fullstack\\cSharp-backend-js-frontend-after-sql-vue-cli-integration-added-custom-vue\\WalletWatcher\\WalletWatcher.csproj",
       "packagesPath": "C:\\Users\\tb-19\\.nuget\\packages\\",
-      "outputPath": "M:\\rep-pub-practice\\cSharp-backend-js-frontend-after-sql-vue-cli-integration-added-custom-vue\\WalletWatcher\\obj\\",
+      "outputPath": "M:\\rep-pub-practice\\cSharp-vue-fullstack\\cSharp-backend-js-frontend-after-sql-vue-cli-integration-added-custom-vue\\WalletWatcher\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

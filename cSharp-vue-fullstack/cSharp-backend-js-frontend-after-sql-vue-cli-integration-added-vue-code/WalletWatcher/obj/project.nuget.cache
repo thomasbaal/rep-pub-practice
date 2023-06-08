@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dYPsPVtxyeRq1xAJK/x3E/9gg8Pnp2SiWoT/i9PT5JXP86NwnSRyBi0c1qFFpiaKRCEGqKHhBc+fau6hlNdMGw==",
+  "dgSpecHash": "AOyhBBhze5p8QS05kZwlgPZ6E8wIwZTlgY37U29wMPxflM4/YEUO8rdYo/tfZm4VgAyxfrPZQNM7yD+fWPcY7w==",
   "success": true,
-  "projectFilePath": "M:\\rep-pub-practice\\cSharp-backend-js-frontend-after-sql-vue-cli-integration-added-vue-code\\WalletWatcher\\WalletWatcher.csproj",
+  "projectFilePath": "M:\\rep-pub-practice\\cSharp-vue-fullstack\\cSharp-backend-js-frontend-after-sql-vue-cli-integration-added-vue-code\\WalletWatcher\\WalletWatcher.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\tb-19\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\tb-19\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

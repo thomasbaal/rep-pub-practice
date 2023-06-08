@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "uqC1zbs0PF0fNFPYL56tDkIUT1NcfKaZFHRq/QW5Y/o=",
+  "Hash": "s+dmK39f0hbpqYSnCw54uaXLQ/AeLCRqhYgg3EAIdBg=",
   "Source": "WalletWatcher",
   "BasePath": "_content/WalletWatcher",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "WalletWatcher\\wwwroot",
       "Source": "WalletWatcher",
-      "ContentRoot": "M:\\rep-pub-practice\\cSharp-backend-js-frontend-after-sql-vue-cli-integration-added-custom-vue\\WalletWatcher\\wwwroot\\",
+      "ContentRoot": "M:\\rep-pub-practice\\cSharp-vue-fullstack\\cSharp-backend-js-frontend-after-sql-vue-cli-integration-added-custom-vue\\WalletWatcher\\wwwroot\\",
       "BasePath": "_content/WalletWatcher",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "M:\\rep-pub-practice\\cSharp-backend-js-frontend-after-sql-vue-cli-integration-added-custom-vue\\WalletWatcher\\wwwroot\\index.html",
+      "Identity": "M:\\rep-pub-practice\\cSharp-vue-fullstack\\cSharp-backend-js-frontend-after-sql-vue-cli-integration-added-custom-vue\\WalletWatcher\\wwwroot\\index.html",
       "SourceId": "WalletWatcher",
       "SourceType": "Discovered",
-      "ContentRoot": "M:\\rep-pub-practice\\cSharp-backend-js-frontend-after-sql-vue-cli-integration-added-custom-vue\\WalletWatcher\\wwwroot\\",
+      "ContentRoot": "M:\\rep-pub-practice\\cSharp-vue-fullstack\\cSharp-backend-js-frontend-after-sql-vue-cli-integration-added-custom-vue\\WalletWatcher\\wwwroot\\",
       "BasePath": "_content/WalletWatcher",
       "RelativePath": "index.html",
       "AssetKind": "All",
