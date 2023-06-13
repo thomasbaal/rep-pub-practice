@@ -1,0 +1,49 @@
+{
+  "Files": [
+    {
+      "Id": "M:\\rep-pub-practice\\cSharp-backend-js-frontend-after-sql-vue-cli-integration\\WalletWatcher\\wwwroot\\css\\app.2cf79ad6.css",
+      "PackagePath": "staticwebassets\\css\\app.2cf79ad6.css"
+    },
+    {
+      "Id": "M:\\rep-pub-practice\\cSharp-backend-js-frontend-after-sql-vue-cli-integration\\WalletWatcher\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "M:\\rep-pub-practice\\cSharp-backend-js-frontend-after-sql-vue-cli-integration\\WalletWatcher\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "M:\\rep-pub-practice\\cSharp-backend-js-frontend-after-sql-vue-cli-integration\\WalletWatcher\\wwwroot\\js\\app.e4999d96.js",
+      "PackagePath": "staticwebassets\\js\\app.e4999d96.js"
+    },
+    {
+      "Id": "M:\\rep-pub-practice\\cSharp-backend-js-frontend-after-sql-vue-cli-integration\\WalletWatcher\\wwwroot\\js\\app.e4999d96.js.map",
+      "PackagePath": "staticwebassets\\js\\app.e4999d96.js.map"
+    },
+    {
+      "Id": "M:\\rep-pub-practice\\cSharp-backend-js-frontend-after-sql-vue-cli-integration\\WalletWatcher\\wwwroot\\js\\chunk-vendors.f719fc64.js",
+      "PackagePath": "staticwebassets\\js\\chunk-vendors.f719fc64.js"
+    },
+    {
+      "Id": "M:\\rep-pub-practice\\cSharp-backend-js-frontend-after-sql-vue-cli-integration\\WalletWatcher\\wwwroot\\js\\chunk-vendors.f719fc64.js.map",
+      "PackagePath": "staticwebassets\\js\\chunk-vendors.f719fc64.js.map"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.WalletWatcher.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.WalletWatcher.props",
+      "PackagePath": "build\\WalletWatcher.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.WalletWatcher.props",
+      "PackagePath": "buildMultiTargeting\\WalletWatcher.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.WalletWatcher.props",
+      "PackagePath": "buildTransitive\\WalletWatcher.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

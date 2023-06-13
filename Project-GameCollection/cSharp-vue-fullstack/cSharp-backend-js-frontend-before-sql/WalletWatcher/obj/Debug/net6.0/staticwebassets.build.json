@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "0UJ8QOF+KW5fxTCBQklBrmel11WFnaUMVBsYnsQApRs=",
+  "Source": "WalletWatcher",
+  "BasePath": "_content/WalletWatcher",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "WalletWatcher\\wwwroot",
+      "Source": "WalletWatcher",
+      "ContentRoot": "C:\\C#_Vue_WalletWatcher_Fullstack\\C#-Backend_Js-Frontend_Before_Sql\\WalletWatcher\\wwwroot\\",
+      "BasePath": "_content/WalletWatcher",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\C#_Vue_WalletWatcher_Fullstack\\C#-Backend_Js-Frontend_Before_Sql\\WalletWatcher\\wwwroot\\index.html",
+      "SourceId": "WalletWatcher",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\C#_Vue_WalletWatcher_Fullstack\\C#-Backend_Js-Frontend_Before_Sql\\WalletWatcher\\wwwroot\\",
+      "BasePath": "_content/WalletWatcher",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    }
+  ]
+}

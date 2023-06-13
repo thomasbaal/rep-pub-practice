@@ -1,2 +1,4 @@
 E:\Coding\Repo_Pub_Work\Vue_Csharp_FullStack\Vue_Csharp\Vue_Csharp\obj\Debug\vue_csharp.esproj.SuggestedBindingRedirects.cache
 E:\Coding\Repo_Pub_Work\Vue_Csharp_FullStack\Vue_Csharp\Vue_Csharp\obj\Debug\vue_csharp.esproj.CoreCompileInputs.cache
+M:\rep-pub-practice\Vue_Csharp_FullStack\Vue_Csharp\Vue_Csharp\obj\Debug\vue_csharp.esproj.SuggestedBindingRedirects.cache
+M:\rep-pub-practice\Vue_Csharp_FullStack\Vue_Csharp\Vue_Csharp\obj\Debug\vue_csharp.esproj.CoreCompileInputs.cache

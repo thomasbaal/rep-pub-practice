@@ -8,7 +8,13 @@
         </base-button>
       </div>
       <p v-if="isLoading">Loading...</p>
-      <ul v-else-if="!isLoading && results && results.length">
+      <p v-else-if="!isLoading && (results || resulsts.length === 0)">
+        No experiences found !
+      </p>
+      <p v-else-if="!isLoading && error">
+        {{ error }}
+      </p>
+      <ul v-else>
         <survey-result
           v-for="result in results"
           :key="result.id"
@@ -31,6 +37,7 @@ export default {
     return {
       results: [],
       isLoading: false,
+      error: null,
     };
   },
   methods: {
@@ -40,8 +47,9 @@ export default {
       
       */
       this.isLoading = true;
+      this.error = null;
       fetch(
-        "https://vue-http-demo-5a731-default-rtdb.europe-west1.firebasedatabase.app/surveys.json"
+        "https://vue-http-demo-5a731-default-rtdb.europe-west1.firebasedatabase.app"
       )
         .then((response) => {
           this.isLoading = false;
@@ -63,6 +71,11 @@ export default {
           //below: cant point to this.results from inside nested functions.
           // fixed by setting it to aan arrow function
           this.results = results;
+        })
+        .catch((error) => {
+          this.isLoading = false;
+          this.error = "Failed to fetch data - please try again later.";
+          console.log(error);
         });
     },
   },
