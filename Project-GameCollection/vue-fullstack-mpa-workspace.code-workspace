@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "vue-blackjack-spa"
+		},
+		{
+			"path": "vue-main-mpa-added-font-awesome-modules"
+		},
+		{
+			"path": "../../rep-priv-resources-templates/JS__Apps_Not_Finnished/NF_MVC_BlackJack"
+		},
+		{
+			"path": "../Vue_Udemy_Complete_Guide"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "NF_MVC_BlackJack"
+	}
+}

@@ -5,7 +5,7 @@
 
 
 <script>
-import MainTable from "./components/layout/MainTable.vue";
+import MainTable from "./components/layout/MainTable_backup.vue";
 export default {
   components: {
     MainTable,
